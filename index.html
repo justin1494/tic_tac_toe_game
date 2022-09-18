@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc238c17a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="board">
+            <div class="board__settings">
+                <div class="board__settings__players">
+                    <i class="fa-solid fa-x"></i>
+                    <i class="fa-solid fa-o"></i>
+                </div>
+                <div class="board__settings__turn">
+                    <i class="fa-solid fa-xmark x-turn"></i>
+                    <i class="fa-solid fa-o circle-turn nonvisible"></i>
+                    <p>TURN</p>
+                </div>
+                <div class="board__settings__reset">
+                    <div class="board__settings__reset__btn">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="board__playground">
+                <div class="board__playground__square"></div>
+                <div class="board__playground__square"></div>
+                <div class="board__playground__square"></div>
+                <div class="board__playground__square"></div>
+                <div class="board__playground__square"></div>
+                <div class="board__playground__square"></div>
+                <div class="board__playground__square"></div>
+                <div class="board__playground__square"></div>
+                <div class="board__playground__square"></div>
+            </div>
+            <div class="board__score">
+                <div class="board__score__player">
+                    <p>X (YOU)</p>
+                    <p class="score-count score-you">0</p>
+                </div>
+                <div class="board__score__ties">
+                    <p>TIES</p>
+                    <p class="score-count score-ties">0</p>
+                </div>
+                <div class="board__score__cpu">
+                    <p>O (CPU)</p>
+                    <p class="score-count score-cpu">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="winning-message-background nonvisible">
+            <div class="winning-message">
+                <p class="winning-message__title"><span>YOU</span> WON!</p>
+                <p class="winning-message__info--x nonvisible"> <i class="fa-solid fa-x"></i>
+                    TAKES THE ROUND</p>
+                <p class="winning-message__info--circle nonvisible"> <i class="fa-solid fa-o"></i>
+                    TAKES THE ROUND</p>
+                <p class="winning-message__info--tie nonvisible">
+                    IT'S A TIE</p>
+                <div class="winning-message__buttons">
+                    <button class="winning-message__buttons--quit">QUIT</button>
+                    <button class="winning-message__buttons--next">NEXT ROUND</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>
